@@ -60,10 +60,13 @@ int main()
     std::cout << "the range sum is: " << std::endl;
     std::cout << range_sum(default_contents.begin(), default_contents.end());
     std::cout << std::endl;
+    std::cout << "the range average is: " << std::endl;
     std::cout << range_avg(default_contents.begin(), default_contents.end());
     std::cout << std::endl;
+    std::cout << "the range maxval is: " << std::endl;
     std::cout << range_maxval(default_contents.begin(), default_contents.end());
     std::cout << std::endl;
+    std::cout << "the range minval is: " << std::endl;
     std::cout << range_minval(default_contents.begin(), default_contents.end());
     std::cout << std::endl;
     
