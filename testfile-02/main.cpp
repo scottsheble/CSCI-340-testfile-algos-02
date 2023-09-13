@@ -54,6 +54,16 @@ auto range_minval(ITERATOR begin, ITERATOR end) {
     return minval;
 }
 
+template <typename ITERATOR>
+int range_count(ITERATOR begin, ITERATOR end) {
+    int range = 0;
+    for (auto it = default_contents.begin(); it != default_contents.end(); it++)
+        range += 1;
+    
+    return range;
+  
+}
+
 
 int main()
 {
@@ -68,6 +78,9 @@ int main()
     std::cout << std::endl;
     std::cout << "the range minval is: " << std::endl;
     std::cout << range_minval(default_contents.begin(), default_contents.end());
+    std::cout << std::endl;
+    std::cout << "the range count is: " << std::endl;
+    std::cout << range_count(default_contents.begin(), default_contents.end());
     std::cout << std::endl;
     
     return 0;
