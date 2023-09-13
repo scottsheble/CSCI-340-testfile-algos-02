@@ -34,6 +34,12 @@ template <typename ITERATOR>
 
 template <typename ITERATOR>
 auto range_maxval(ITERATOR begin, ITERATOR end) {
+    double maxval = 0;
+    for (auto it = default_contents.begin(); it != default_contents.end(); it++)
+        if (maxval < *it)
+            maxval = *it;
+
+    return maxval;
     
 
 }
@@ -46,6 +52,7 @@ int main()
     std::cout << std::endl;
     std::cout << range_avg(default_contents.begin(), default_contents.end());
     std::cout << std::endl;
-    //std::cout << range_maxval(default_contents.begin(), default_contents.end());
+    std::cout << range_maxval(default_contents.begin(), default_contents.end());
+    std::cout << std::endl;
     return 0;
 }
