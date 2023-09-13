@@ -44,6 +44,16 @@ auto range_maxval(ITERATOR begin, ITERATOR end) {
 
 }
 
+template <typename ITERATOR>
+auto range_minval(ITERATOR begin, ITERATOR end) {
+    double minval = 0;
+    for (auto it = default_contents.begin(); it != default_contents.end(); it++)
+        if (minval > *it)
+            minval = *it;
+
+    return minval;
+}
+
 
 int main()
 {
@@ -54,5 +64,8 @@ int main()
     std::cout << std::endl;
     std::cout << range_maxval(default_contents.begin(), default_contents.end());
     std::cout << std::endl;
+    std::cout << range_minval(default_contents.begin(), default_contents.end());
+    std::cout << std::endl;
+    
     return 0;
 }
