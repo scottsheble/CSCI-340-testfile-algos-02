@@ -9,6 +9,8 @@
 #include <iterator>
 #include <vector>
 #include <iomanip>
+#include <string>
+#include "assign2-algos.decl.h"
 
 const std::vector <int> default_contents = { 100, 200, 300, 0, 420, 0, 0, 0, 1, 1, 2, 3, 5, 8, 0, 1000 };
 
@@ -76,6 +78,24 @@ void print_range(std::ostream & ost, ITERATOR begin, ITERATOR end, const std::st
     for (auto it = begin; it != end; it++)
         ost << *it << sep;
     ost << post;
+}
+
+template<typename ITERATOR, typename RANDOM_ACCESS>
+void histogram(ITERATOR begin, ITERATOR end, RANDOM_ACCESS & nums, int N, int divisor) {
+    std::cout << "0";
+}
+
+
+template <typename ITERATOR, typename T>
+iter_token_info<ITERATOR> get_next_token_strict(ITERATOR begin, ITERATOR end, T delim) {
+    int temp = 0;
+    return temp;
+}
+
+template <typename ITERATOR, typename T>
+iter_token_info<ITERATOR> get_next_token_greedy(ITERATOR begin, ITERATOR end, T delim) {
+    int temp = 0;
+    return temp;
 }
 
 

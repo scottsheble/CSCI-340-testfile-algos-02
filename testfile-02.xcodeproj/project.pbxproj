@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		672E7D6D2AB4ABEE002072CD /* assign2-algos.decl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "assign2-algos.decl.h"; sourceTree = "<group>"; };
 		678430592AB1057500DC71E6 /* testfile-02 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "testfile-02"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6784305C2AB1057500DC71E6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				6784305C2AB1057500DC71E6 /* main.cpp */,
+				672E7D6D2AB4ABEE002072CD /* assign2-algos.decl.h */,
 			);
 			path = "testfile-02";
 			sourceTree = "<group>";
